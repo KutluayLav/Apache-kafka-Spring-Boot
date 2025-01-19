@@ -7,6 +7,8 @@ spring:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       # value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: com.kutluayulutas.kafka_test.payload
 
     producer:
       bootstrap-servers: localhost:9092
