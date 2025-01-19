@@ -33,6 +33,6 @@ public class MessageController {
     @PostMapping("/json")
     public ResponseEntity<String> sendJsonMessage(@RequestBody Student message) {
         kafkaJsonProducer.sendMessage(message);
-        return ResponseEntity.ok("Message sent successfully");
+        return ResponseEntity.ok("Json Message sent successfully");
     }
 }
