@@ -1,4 +1,4 @@
-package com.kutluayulutas.producer.config;
+package com.kutluayulutas.consumer.config;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.context.annotation.Bean;
@@ -14,4 +14,5 @@ public class WikimediaTopicConfig {
                 .name("wikimedia-stream")
                 .build();
     }
+
 }

@@ -16,7 +16,7 @@ public class WikimediaProducer {
     }
 
     public void sendMessage(String message){
-        log.info(String.format("Sending message to wikimedia-stream topic:: %s", message));
+        log.info(String.format("Producer Sending message to wikimedia-stream topic:: %s", message));
         kafkaTemplate.send("wikimedia-stream", message);
     }
 }
